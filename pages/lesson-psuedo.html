@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-Pseudo</title>
+    <style>
+        button{
+            background-color: black;
+            color: azure;
+        }
+
+        button:hover{
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        button:active{
+            background-color: white;
+            color: black;
+        }
+
+        li:first-child{
+            color: red;
+        }
+
+        li:nth-child(3){
+            color: blueviolet;
+        }
+
+        li:last-child{
+            color: darkcyan;
+        }
+    /*pseudo elements styles*/
+    p::before{
+        content: "Read this....";
+        color: darkmagenta;
+    }
+
+    p::after{
+        content: "the End";
+        color: darkred;
+    }
+    p::first-letter{
+        font-size:30px;
+        color: deeppink;
+    }
+    p::first-line{
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h1>Lesson-Pseudo</h1>
+    <h2>Pseudo classes</h2>
+    <button style="width: 150px;;">
+        click
+    </button>
+    
+    <ul><b>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Typescript</li>
+    </b>
+        
+    </ul>
+    <h2>==========pseudo elements============</h2>
+    <body>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Libero consequuntur porro expedita ad quia dignissimos dicta
+            voluptatum cupiditate, est architecto fugiat et corporis, 
+            nesciunt facere veritatis eveniet ipsa doloribus suscipit 
+            quod? Earum rem nihil harum explicabo labore, eligendi veritatis
+            cupiditate, quae ex fuga sit dolorem vero natus. Sit labore 
+            aliquid debitis quod earum officia soluta a quae? Illum suscipit
+            consequuntur dolore! Impedit, magnam iste eaque vero hic nobis
+            incidunt! Expedita saepe iusto fugit. Facere, corrupti vero 
+            perspiciatis eligendi eveniet quaerat debitis sit voluptate 
+            earum aut aliquid, quis soluta beatae. Amet provident tempore
+            maxime ut voluptas aspernatur libero ducimus optio voluptates!
+        </p>
+    </body>
+</body>
+</html>

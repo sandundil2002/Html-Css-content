@@ -1,0 +1,38 @@
+p{
+    color: darkblue;
+}
+/*class selector ekata tamai high priority eka yanne*/
+.content{
+    color: rgb(173, 41, 41);
+}
+#content-id{
+    color: rgb(110, 143, 52);
+}
+h4{
+    color: cadetblue;
+}
+.card-title{
+    color: darkblue;
+    
+}
+#recipe-card-title{
+    color: blueviolet;
+}
+div h4 {
+    color: black;
+}
+div.card-title{
+    color: green;
+}
+div #recipe-card-title {
+color: deeppink;
+}
+div.recipe-card-title{
+    color: red;
+}
+#recipe-card-title{
+    color: lightsalmon;
+}
+div #recipe-card-title #card-title{
+    color: yellow;
+}

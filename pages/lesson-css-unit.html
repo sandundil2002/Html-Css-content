@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Unit</title>
+    <style>
+        .box{
+            height: 100px;
+            /* using pixels */
+            background: linear-gradient(to right,rgb(198, 204, 38),wheat);
+            border: 1px solid black;
+
+        }
+        .box-pixel{
+            width: 200px;
+            
+        }
+        .box_percentage{
+            width: 50%;
+        }
+        .box1-1{
+            width: 20%;
+        }
+        .box1-2{
+            width: 10%;
+
+        }
+        .box_2{
+            width: 50vw;
+            height: 20dvh;
+            background-color: rgb(237, 200, 186);
+        }
+    </style>
+</head>
+<body>
+   <div class="box box-pixel"></div> 
+   <div class="box box_percentage"></div>
+   <hr style="color: navy;">
+
+   <div style="width: 400px; height: 400px; background-color: black;">
+    <div style="width: 100px; height: 100px; background-color: lightskyblue;"></div> 
+    <div style="width: 100px; height: 100px; background-color: lightcoral;"></div>
+   </div>
+   
+   <div class="box_2"></div>
+   <hr/> 
+
+    <div style="font-size: 1rem;">Hello World</div>
+   <div style="font-size: 2rem;">Hello World</div>
+   <div style="font-size: 3rem;">Hello World</div>
+   <div style="font-size: 4rem;">Hello World</div> 
+   <div style="font-size: 5rem;">Hello World</div>
+
+   =============em==============
+   <div style="font-size: 10px;">
+    <div style="font-size: 1em;">Hello World</div>
+    <div style="font-size: 2em;">Hello World</div>
+    <div style="font-size: 3em;">Hello World</div>
+    <div style="font-size: 4em;">Hello World</div>
+    <div style="font-size: 5em;">Hello World</div>
+    <div style="font-size: 8em;">Hello World</div>
+    <div style="font-size: 10em;">Hello World</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_real</title>
+</head>
+<style>
+    th{                                                 
+        text-align: left;
+        background-color: rgb(243, 236, 249);
+        border: 1px solid rgb(211, 20, 20);
+        padding: 8px;
+
+    }
+    td{
+        border: 1px solid rgb(18, 13, 13);
+        padding: 8px;
+    }
+</style>
+<body>
+    <table style="border: 1px solid black;">
+        <tr>
+            <th colspan="2">Personal Infromation</th>
+        </tr>
+        <tr>
+            <td>Name :</td>
+            <td  colspan="2"><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td colspan="2"><input type="text" name="age" id="age"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">Address</td>
+            <td>Street</td>
+            <td><input type="text" name="street" id="street"></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" name="city" id="city"></td>
+        </tr>
+        <tr>
+            <td>    Zip code:</td>
+            <td><input type="text" name="zip code" id="zip code"></td>
+        </tr>
+        <tr>
+            <th colspan="2"> Additional Infromation :</th>
+        </tr>
+        <br>
+        <tr>
+            <td colspan="3"><textarea name="message" id="" cols="50" rows="10"></textarea></td>
+        </tr>
+        <br>
+        <tr>        
+          <td colspan="3"><input type="button" value="submit"></td>  
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson CSS-Selectors</title>
+    <style>
+      /*  1.Element Selector*/
+        h2{
+            color: chocolate;
+        }
+        
+        #main-heading{
+            color: coral;
+        }
+        .Heading-Selector{
+            color: green;
+        }
+        /*4.Attribute Selector  */
+        input[type = "text"]{
+            background-color: lightblue;
+        }
+        input[type = "time"]{
+            background-color: aqua;
+            width: 120px;
+        }
+        button:hover{
+            background-color: palevioletred;
+            cursor: pointer;
+        }
+        p::first-line{
+            color: darkolivegreen;
+        }
+        div h4 {
+            color: navy;
+        }
+        div div h4{
+            color: darkgoldenrod;
+        }
+        div > h5{
+            font-weight: bold;
+            color: darkred;
+        }
+        h2 + p {
+            color:darkblue ;
+            background-color: lightblue;
+        }
+        h3 ~ p{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+    ========== 1.Element Selector==========
+    <h2>Element Selector</h2>
+
+    ========== 2.ID Selector==========
+    <h2 id="main-heading">ID Selector</h2>
+
+    ========== 3.Class Selector==========
+    <h2 class="Heading-Selector">Class Selector</h2>
+    <h3 class="Heading-Selector">Class Selector</h3>
+    <h3 class="Heading-Selector">Class Selector</h3>
+    <h3 class="Heading-Selector">Class Selector</h3>
+
+    ========== 4.Attribute Selector==========
+    <br/> <input  type="text" placeholder="Enter your full name"/>
+    <br/>
+    
+    <input type="time"placeholder="Time"/>
+    <br/>
+    ===========5.Pseudo classes selector==========
+    
+<button>
+    send
+</button>
+
+    ===========6.Pseudo elements selector==========
+
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nesciunt perferendis modi harum voluptas asperiores illo labore odio iure beatae voluptate, nulla veniam, mollitia recusandae nam excepturi minus amet placeat?</p>
+
+    ===========7.descendent selector=====================
+    <div>
+        <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Rem aspernatur tenetur corrupti. Nulla sit earum ab deserunt 
+             quidem quis. Hic id quidem excepturi aliquam reprehenderit soluta 
+             quaerat deleniti similique ducimus?
+        </h4>
+    </div>
+    <div>
+        <div>
+            <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Rem aspernatur tenetur corrupti. Nulla sit earum ab deserunt 
+                 quidem quis. Hic id quidem excepturi aliquam reprehenderit soluta 
+                 quaerat deleniti similique ducimus?
+            </h4>  
+        </div>
+    </div>
+    ===============8.child selector(>)====================
+    <div>
+        <h5>Java</h5>
+        <h5>Python</h5>
+        <h5>JavaScript</h5>
+        <h5>Typescript</h5>
+    </div>
+
+    ==============9.Adjacent sibling selector(+)============
+    <h2>Heading 3</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Similique ipsum rerum iste molestias nam totam voluptates 
+        necessitatibus, dolorem, esse culpa eius in distinctio consectetur, 
+        dolores ad nulla consequuntur temporibus magnam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Similique ipsum rerum iste molestias nam totam voluptates 
+        necessitatibus, dolorem, esse culpa eius in distinctio consectetur, 
+        dolores ad nulla consequuntur temporibus magnam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Similique ipsum rerum iste molestias nam totam voluptates 
+        necessitatibus, dolorem, esse culpa eius in distinctio consectetur, 
+        dolores ad nulla consequuntur temporibus magnam.
+    </p>
+
+    ============10.General sibling selector(~)===============
+    <h3>Heading 4</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam vero non quam accusamus beatae, eos praesentium provident quas. Ea quae modi deserunt minus eligendi rem alias natus reiciendis adipisci!
+    </p>
+
+</body>
+</html>
+
+<!-- 7,8,9,10 -- combinators>*/
