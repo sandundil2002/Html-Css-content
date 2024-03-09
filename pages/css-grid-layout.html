@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .container>div {
+            border: 1px solid black;
+        }
+
+        .container>div:nth-child(odd) {
+            background-color: aquamarine;
+        }
+
+        .container>div:nth-child(even) {
+            background-color: bisque;
+        }
+
+        .assaignment {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .assaignment>div {
+            border: 1px solid black;
+        }
+
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .nested>div {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
+            laborum veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia
+            molestias aspernatur.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
+            laborum
+            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
+            aspernatur.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
+            laborum
+            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
+            aspernatur.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
+            laborum
+            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
+            aspernatur.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
+            laborum
+            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
+            aspernatur.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, doloribus? Ea quasi sequi optio laboriosam non
+            laborum
+            veniam maxime, voluptatem placeat, obcaecati dolorum quia repellat deleniti praesentium, mollitia molestias
+            aspernatur.
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="assaignment">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla, explicabo ad at earum, incidunt magni
+            tempore sapiente necessitatibus, rem eligendi quidem aspernatur recusandae sed assumenda quaerat adipisci
+            illum! Sequi.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla, explicabo ad at earum, incidunt magni
+            tempore
+            sapiente necessitatibus, rem eligendi quidem aspernatur recusandae sed assumenda quaerat adipisci illum!
+            Sequi.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla, explicabo ad at earum, incidunt magni
+            tempore
+            sapiente necessitatibus, rem eligendi quidem aspernatur recusandae sed assumenda quaerat adipisci illum!
+            Sequi.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla, explicabo ad at earum, incidunt magni
+            tempore
+            sapiente necessitatibus, rem eligendi quidem aspernatur recusandae sed assumenda quaerat adipisci illum!
+            Sequi.
+        </div>
+
+        <div class="nested">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nostrum accusamus illo, nemo explicabo,
+            itaque quos natus earum assumenda ducimus minus reiciendis optio repellendus qui a nam nihil enim saepe?
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nostrum accusamus illo, nemo explicabo,
+            itaque quos natus earum assumenda ducimus minus reiciendis optio repellendus qui a nam nihil enim saepe?
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla, explicabo ad at earum, incidunt magni
+            tempore
+            sapiente necessitatibus, rem eligendi quidem aspernatur recusandae sed assumenda quaerat adipisci illum!
+            Sequi.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A nulla, explicabo ad at earum, incidunt magni
+            tempore
+            sapiente necessitatibus, rem eligendi quidem aspernatur recusandae sed assumenda quaerat adipisci illum!
+            Sequi.
+        </div>
+    </div>
+</body>
+
+</html>
