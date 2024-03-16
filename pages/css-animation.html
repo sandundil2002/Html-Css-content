@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersice animation-duration</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            margin-left: 10px;
+            animation-name: square;
+            margin-left: 500px;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes square {
+            0% {
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+
+            25% {
+                margin-top: 0px;
+                margin-left: 500px;
+            }
+
+            50% {
+                margin-top: 500px;
+                margin-left: 500px;
+                background-color: blueviolet;
+                transform: scale(2);
+            }
+
+            75% {
+                margin-top: 500px;
+                margin-left: 0px;
+                background-color: lightblue;
+            }
+
+            100% {
+                margin-top: 0px;
+                margin-left: 0px;
+                border-radius: 100%;
+                background-color: aqua;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
