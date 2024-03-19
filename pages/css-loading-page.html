@@ -6,48 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container {
-            text-align: center;
-            font-size: 350px;
-            color: blue;
-            position: relative;
-            display: grid;
-            grid-template-columns: repeat(8, 1fr);
+         .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            
         }
 
-        .container>div {
-            animation-name: square;
-            animation-duration: 1s;
-            animation-timing-function: linear;
+        .circle {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            border-radius: 50px;
+            position: relative;
+            animation: up-down 1.5s;
+            animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
         }
 
-        @keyframes square {
-            0% {
-                margin-left: 0px;
-                margin-top: 0px;
-            }
+      .circle2{
+        animation-delay: 0.2s;
+      }
+      .circle3{
+        animation-delay: 0.4s;
+      }
+      .circle4{
+        animation-delay: 0.6s;
+      }
+      .circle5{
+        animation-delay:0.8s;
+      }
+      .circle6{
+        animation-delay:1s;
+      }
+      .circle7{
+        animation-delay:1.2s;
+      }
+      .circle8{
+        animation-delay:1.4s;
+      }
+      
 
-            50% {
-                margin-top: 100px;
-                margin-bottom: -100px;
-                transform: scale(2);
-            }
-
+      @keyframes up-down {
+        0%,100%{
+            top: 0;
         }
+        50%{
+            top:100px
+        }
+      }
+
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
-        <div>.</div>
+        <div class="circle circle1">.</div>
+        <div class="circle circle2">.</div>
+        <div class="circle circle3">.</div>
+        <div class="circle circle4">.</div>
+        <div class="circle circle5">.</div>
+        <div class="circle circle6">.</div>
+        <div class="circle circle7">.</div>
+        <div class="circle circle8">.</div>
     </div>
 </body>
 
