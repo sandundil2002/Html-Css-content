@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Button Exercise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        .customer-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            border: 1px solid black;
+            background-color: darkgray;
+        }
+
+        .container {
+            border: 3px solid black;
+            border-radius: 10px;
+            height: 500px;
+            padding: 20px 20px;
+        }
+
+        .title-bar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: 2px solid tomato;
+            border-radius: 10px;
+            padding: 10px 10px;
+        }
+
+        .nav-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            font-size: 30px;
+            gap: 20px;
+        }
+
+        .menu-btn {
+            display: none;
+            width: 80px;
+            height: 80px;
+        }
+
+        #icon {
+            font-size: 100px;
+            color: green;
+            display: none;
+        }
+
+        @media screen and (max-width:656px) {
+            .nav-bar {
+                display: none;
+                font-size: 30px;
+                gap: 20px;
+            }
+
+            #icon {
+                display: inline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Menu Button Exercise</h1>
+    <div class="container">
+        <div class="title-bar">
+            <img class="customer-img" src="/Assests/Customer.gif" alt="">
+            <div class="nav-bar">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Service</a>
+                <a href="">Contact</a>
+            </div>
+            <i id="icon" class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</body>
+
+</html>
