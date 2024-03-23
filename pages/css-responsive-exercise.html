@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Exercise</title>
+    <style>
+        body {
+            background-color: aqua;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 0%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+        .customer-img {
+            width: 80px;
+            height: 80px;
+            border: 1px solid black;
+            border-radius: 100%;
+            background-color: blueviolet;
+        }
+
+        .star-img {
+            width: 300px;
+            padding-left: 100px;
+            margin-top: -135px;
+        }
+
+        .cards {
+            width: 350px;
+            height: 350px;
+            border: 3px solid black;
+            border-radius: 15px;
+            padding: 10px 10px;
+            background-color: cadetblue;
+            color: brown;
+        }
+
+        .desc {
+            border: 2px solid rebeccapurple;
+            border-radius: 10px;
+            margin-top: -40px;
+        }
+
+        .sign {
+            text-align: right;
+            margin-top: -13px;
+            font-style: italic;
+            color: black;
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 575px) {
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 1400px) {
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Review Corner</h1>
+
+    <div class="card-container">
+
+        <div class="cards">
+            <img class="customer-img" src="/Assests/Customer.gif" alt="">
+            <img class="star-img" src="/Assests/5 Star Rating.gif" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem in nemo incidunt, voluptatum
+                velit eveniet.
+                Asperiores officia qui expedita iure veritatis tempora quia alias cum neque repudiandae dignissimos,
+                ipsa labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum aut cum tempora
+                vel quam, sapiente earum alias qui eaque nostrum ab, dignissimos expedita exercitationem ipsa</p>
+            <h5 class="sign">Sandun Dilshan</h5>
+        </div>
+
+        <div class="cards">
+            <img class="customer-img" src="/Assests/Customer.gif" alt="">
+            <img class="star-img" src="/Assests/5 Star Rating.gif" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem in nemo incidunt, voluptatum
+                velit eveniet.
+                Asperiores officia qui expedita iure veritatis tempora quia alias cum neque repudiandae dignissimos,
+                ipsa labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum aut cum tempora
+                vel quam, sapiente earum alias qui eaque nostrum ab, dignissimos expedita exercitationem ipsa</p>
+            <h5 class="sign">Sandun Dilshan</h5>
+        </div>
+
+        <div class="cards">
+            <img class="customer-img" src="/Assests/Customer.gif" alt="">
+            <img class="star-img" src="/Assests/5 Star Rating.gif" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem in nemo incidunt, voluptatum
+                velit eveniet.
+                Asperiores officia qui expedita iure veritatis tempora quia alias cum neque repudiandae dignissimos,
+                ipsa labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum aut cum tempora
+                vel quam, sapiente earum alias qui eaque nostrum ab, dignissimos expedita exercitationem ipsa</p>
+            <h5 class="sign">Sandun Dilshan</h5>
+        </div>
+
+        <div class="cards">
+            <img class="customer-img" src="/Assests/Customer.gif" alt="">
+            <img class="star-img" src="/Assests/5 Star Rating.gif" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem in nemo incidunt, voluptatum
+                velit eveniet.
+                Asperiores officia qui expedita iure veritatis tempora quia alias cum neque repudiandae dignissimos,
+                ipsa labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum aut cum tempora
+                vel quam, sapiente earum alias qui eaque nostrum ab, dignissimos expedita exercitationem ipsa</p>
+            <h5 class="sign">Sandun Dilshan</h5>
+        </div>
+
+        <div class="cards">
+            <img class="customer-img" src="/Assests/Customer.gif" alt="">
+            <img class="star-img" src="/Assests/5 Star Rating.gif" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem in nemo incidunt, voluptatum
+                velit eveniet.
+                Asperiores officia qui expedita iure veritatis tempora quia alias cum neque repudiandae dignissimos,
+                ipsa labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum aut cum tempora
+                vel quam, sapiente earum alias qui eaque nostrum ab, dignissimos expedita exercitationem ipsa</p>
+            <h5 class="sign">Sandun Dilshan</h5>
+        </div>
+
+        <div class="cards">
+            <img class="customer-img" src="/Assests/Customer.gif" alt="">
+            <img class="star-img" src="/Assests/5 Star Rating.gif" alt="">
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem in nemo incidunt, voluptatum
+                velit eveniet.
+                Asperiores officia qui expedita iure veritatis tempora quia alias cum neque repudiandae dignissimos,
+                ipsa labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum aut cum tempora
+                vel quam, sapiente earum alias qui eaque nostrum ab, dignissimos expedita exercitationem ipsa</p>
+            <h5 class="sign">Sandun Dilshan</h5>
+        </div>
+    </div>
+</body>
+
+</html>
